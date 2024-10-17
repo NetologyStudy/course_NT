@@ -13,10 +13,10 @@ class Vk_Api:
     def __init__(self, access_token, vk_version='5.131'):
         self.access_token = access_token
         self.vk_version = vk_version
-        self.params = {'access_token': self.access_token, 'v': self.vk_version, 'owner_id': token_cfg.vkid}
+        self.params = {'access_token': self.access_token, 'v': self.vk_version}
 
     def get_photo(self):
-        params = {'album_id': 'profile', 'extended': 1, 'count': 5}
+        params = {'owner_id': token_cfg.vkid,'album_id': 'profile', 'extended': 1, 'count': 5}
         response = requests.get(f'{self.vk_url}photos.get', params={**self.params, **params}).json()
         return response['response']['items']
 
