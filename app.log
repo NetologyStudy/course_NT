@@ -1,42 +1,44 @@
-2024-10-17 20:46:07,533 - DEBUG - Starting new HTTPS connection (1): api.vk.com:443
-2024-10-17 20:46:07,616 - DEBUG - https://api.vk.com:443 "GET /method/photos.get?access_token=vk1.a.Wq5KQMNK61lREPWT36p13J9X0lBcaHJ5sEXXxjNklQqEhduhuv_J0SMHTIc2Y5bgC9f3ZHXKMvPyvKXdziQCM4fkCMLJuqcHqhZHTGMZ9gvpvlInC05sa6EJcTN0ueA5OMoUgm5MzQZ_Y5srdGzN3XRhKDkt49AUGj5rq5KM0uKX12-q_9mg_kYcvUFq-8dH&v=5.131&owner_id=260829155&album_id=profile&extended=1&count=5 HTTP/11" 200 1763
-2024-10-17 20:46:07,618 - DEBUG - Starting new HTTPS connection (1): api.vk.com:443
-2024-10-17 20:46:07,722 - DEBUG - https://api.vk.com:443 "GET /method/photos.get?access_token=vk1.a.Wq5KQMNK61lREPWT36p13J9X0lBcaHJ5sEXXxjNklQqEhduhuv_J0SMHTIc2Y5bgC9f3ZHXKMvPyvKXdziQCM4fkCMLJuqcHqhZHTGMZ9gvpvlInC05sa6EJcTN0ueA5OMoUgm5MzQZ_Y5srdGzN3XRhKDkt49AUGj5rq5KM0uKX12-q_9mg_kYcvUFq-8dH&v=5.131&owner_id=260829155&album_id=profile&extended=1&count=5 HTTP/11" 200 1763
-2024-10-17 20:46:07,723 - DEBUG - Starting new HTTPS connection (1): sun9-53.userapi.com:443
-2024-10-17 20:46:07,770 - DEBUG - https://sun9-53.userapi.com:443 "GET /s/v1/if1/EN2GSuMuNgCRb7NOQT6ECubQ4fVnAKw9V0by1EKIR2LbUoImx_W52DWYiXuE1AEVH6VZ9CCN.jpg?quality=96&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640&from=bu HTTP/11" 200 40985
-2024-10-17 20:46:07,774 - INFO - Фотография 357.jpg успешно сохранена!
-2024-10-17 20:46:07,775 - DEBUG - Starting new HTTPS connection (1): sun9-19.userapi.com:443
-2024-10-17 20:46:07,820 - DEBUG - https://sun9-19.userapi.com:443 "GET /s/v1/if1/pBY4GAJXvvBbmTj5GOFuZ1WhqBdYL2-m5hy8t1jLuOCy99022jT-c-nccMuTT0TAGpDpsRBe.jpg?quality=96&as=32x97,48x146,72x219,108x329,160x487,240x731,360x1096,480x1462,484x1474&from=bu HTTP/11" 200 196595
-2024-10-17 20:46:07,849 - INFO - Фотография 252.jpg успешно сохранена!
-2024-10-17 20:46:07,850 - DEBUG - Starting new HTTPS connection (1): sun9-56.userapi.com:443
-2024-10-17 20:46:07,897 - DEBUG - https://sun9-56.userapi.com:443 "GET /s/v1/if2/nEA8dEUHQ211z9T6pPxBQmc2hWhPOM6ePUU457VZaOAghbC0JseWHctbU86xQkYaKdX8CFBT-TYtaZfCxO_CkhOb.jpg?quality=96&as=32x40,48x60,72x90,108x135,160x200,240x300,360x450,480x600,540x675,640x800,720x900,816x1020&from=bu HTTP/11" 200 223853
-2024-10-17 20:46:07,929 - INFO - Фотография 353.jpg успешно сохранена!
-2024-10-17 20:46:07,930 - DEBUG - Starting new HTTPS connection (1): sun9-6.userapi.com:443
-2024-10-17 20:46:07,975 - DEBUG - https://sun9-6.userapi.com:443 "GET /s/v1/if2/mNEF9zK_o6VuhvlnWLLDUpzgUNk0fjEuLMumELEPyZMHfAqz3-IXABIvZpOf0fLZXu8iXXuj5UzXThNAxWv8ucyG.jpg?quality=96&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1200x1600&from=bu HTTP/11" 200 391465
-2024-10-17 20:46:08,023 - INFO - Фотография 154.jpg успешно сохранена!
-2024-10-17 20:46:08,024 - DEBUG - Starting new HTTPS connection (1): sun9-78.userapi.com:443
-2024-10-17 20:46:08,069 - DEBUG - https://sun9-78.userapi.com:443 "GET /s/v1/ig2/DjZyVHRj2uWqx1lPYbuQtApavy8ZfHJWP4CWo0JmpIxudXMxNn6ak9o4JeBf-m5CJU7eIqBktPoAiB8WlQdPLWwV.jpg?quality=96&as=32x44,48x66,72x98,108x148,160x219,240x328,360x492,480x656,540x738,640x875,720x984,733x1002&from=bu HTTP/11" 200 231325
-2024-10-17 20:46:08,103 - INFO - Фотография 31.jpg успешно сохранена!
-2024-10-17 20:46:08,104 - DEBUG - Starting new HTTPS connection (1): cloud-api.yandex.net:443
-2024-10-17 20:46:08,558 - DEBUG - https://cloud-api.yandex.net:443 "PUT /v1/disk/resources?path=Photos HTTP/11" 201 112
-2024-10-17 20:46:08,572 - DEBUG - Starting new HTTPS connection (1): cloud-api.yandex.net:443
-2024-10-17 20:46:08,985 - DEBUG - https://cloud-api.yandex.net:443 "GET /v1/disk/resources/upload?path=Photos%2F154.jpg HTTP/11" 200 None
-2024-10-17 20:46:08,992 - DEBUG - Starting new HTTPS connection (1): uploader14g.disk.yandex.net:443
-2024-10-17 20:46:09,532 - DEBUG - https://uploader14g.disk.yandex.net:443 "PUT /upload-target/20241017T204609.059.utd.9uwdm5614n0sxwzqsyds3j8jw-k14g.18038398 HTTP/11" 201 None
-2024-10-17 20:46:09,534 - DEBUG - Starting new HTTPS connection (1): cloud-api.yandex.net:443
-2024-10-17 20:46:10,237 - DEBUG - https://cloud-api.yandex.net:443 "GET /v1/disk/resources/upload?path=Photos%2F252.jpg HTTP/11" 200 None
-2024-10-17 20:46:10,243 - DEBUG - Starting new HTTPS connection (1): uploader83j.disk.yandex.net:443
-2024-10-17 20:46:11,457 - DEBUG - https://uploader83j.disk.yandex.net:443 "PUT /upload-target/20241017T204610.239.utd.7104fhli11d2ry0ufp4xnyddh-k83j.17469964 HTTP/11" 201 None
-2024-10-17 20:46:11,459 - DEBUG - Starting new HTTPS connection (1): cloud-api.yandex.net:443
-2024-10-17 20:46:11,864 - DEBUG - https://cloud-api.yandex.net:443 "GET /v1/disk/resources/upload?path=Photos%2F31.jpg HTTP/11" 200 None
-2024-10-17 20:46:11,870 - DEBUG - Starting new HTTPS connection (1): uploader71j.disk.yandex.net:443
-2024-10-17 20:46:13,658 - DEBUG - https://uploader71j.disk.yandex.net:443 "PUT /upload-target/20241017T204611.943.utd.958rstguat6rlcgw9w7iffb8-k71j.17534090 HTTP/11" 201 None
-2024-10-17 20:46:13,659 - DEBUG - Starting new HTTPS connection (1): cloud-api.yandex.net:443
-2024-10-17 20:46:14,038 - DEBUG - https://cloud-api.yandex.net:443 "GET /v1/disk/resources/upload?path=Photos%2F353.jpg HTTP/11" 200 None
-2024-10-17 20:46:14,044 - DEBUG - Starting new HTTPS connection (1): uploader46j.disk.yandex.net:443
-2024-10-17 20:46:14,608 - DEBUG - https://uploader46j.disk.yandex.net:443 "PUT /upload-target/20241017T204614.110.utd.3nctdk4659wsj0byatdmfmewv-k46j.18909576 HTTP/11" 201 None
-2024-10-17 20:46:14,609 - DEBUG - Starting new HTTPS connection (1): cloud-api.yandex.net:443
-2024-10-17 20:46:15,012 - DEBUG - https://cloud-api.yandex.net:443 "GET /v1/disk/resources/upload?path=Photos%2F357.jpg HTTP/11" 200 None
-2024-10-17 20:46:15,018 - DEBUG - Starting new HTTPS connection (1): uploader26g.disk.yandex.net:443
-2024-10-17 20:46:15,389 - DEBUG - https://uploader26g.disk.yandex.net:443 "PUT /upload-target/20241017T204615.089.utd.amjaj9ryzmms30mc3s9egm48p-k26g.11995525 HTTP/11" 201 None
-2024-10-17 20:46:15,390 - INFO - Фотографии успешно загружены на Яндекс.Диск!
+2024-10-17 20:50:58,092 - DEBUG - Starting new HTTPS connection (1): api.vk.com:443
+2024-10-17 20:50:58,189 - DEBUG - https://api.vk.com:443 "GET /method/photos.get?access_token=vk1.a.Wq5KQMNK61lREPWT36p13J9X0lBcaHJ5sEXXxjNklQqEhduhuv_J0SMHTIc2Y5bgC9f3ZHXKMvPyvKXdziQCM4fkCMLJuqcHqhZHTGMZ9gvpvlInC05sa6EJcTN0ueA5OMoUgm5MzQZ_Y5srdGzN3XRhKDkt49AUGj5rq5KM0uKX12-q_9mg_kYcvUFq-8dH&v=5.131&owner_id=260829155&album_id=profile&extended=1&count=5 HTTP/11" 200 1763
+2024-10-17 20:50:58,191 - DEBUG - Starting new HTTPS connection (1): api.vk.com:443
+2024-10-17 20:50:58,272 - DEBUG - https://api.vk.com:443 "GET /method/photos.get?access_token=vk1.a.Wq5KQMNK61lREPWT36p13J9X0lBcaHJ5sEXXxjNklQqEhduhuv_J0SMHTIc2Y5bgC9f3ZHXKMvPyvKXdziQCM4fkCMLJuqcHqhZHTGMZ9gvpvlInC05sa6EJcTN0ueA5OMoUgm5MzQZ_Y5srdGzN3XRhKDkt49AUGj5rq5KM0uKX12-q_9mg_kYcvUFq-8dH&v=5.131&owner_id=260829155&album_id=profile&extended=1&count=5 HTTP/11" 200 1763
+2024-10-17 20:50:58,273 - DEBUG - Starting new HTTPS connection (1): sun9-53.userapi.com:443
+2024-10-17 20:50:58,322 - DEBUG - https://sun9-53.userapi.com:443 "GET /s/v1/if1/EN2GSuMuNgCRb7NOQT6ECubQ4fVnAKw9V0by1EKIR2LbUoImx_W52DWYiXuE1AEVH6VZ9CCN.jpg?quality=96&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640&from=bu HTTP/11" 200 40985
+2024-10-17 20:50:58,332 - INFO - Фотография 357.jpg успешно сохранена!
+2024-10-17 20:50:58,333 - DEBUG - Starting new HTTPS connection (1): sun9-19.userapi.com:443
+2024-10-17 20:50:58,378 - DEBUG - https://sun9-19.userapi.com:443 "GET /s/v1/if1/pBY4GAJXvvBbmTj5GOFuZ1WhqBdYL2-m5hy8t1jLuOCy99022jT-c-nccMuTT0TAGpDpsRBe.jpg?quality=96&as=32x97,48x146,72x219,108x329,160x487,240x731,360x1096,480x1462,484x1474&from=bu HTTP/11" 200 196595
+2024-10-17 20:50:58,407 - INFO - Фотография 252.jpg успешно сохранена!
+2024-10-17 20:50:58,408 - DEBUG - Starting new HTTPS connection (1): sun9-56.userapi.com:443
+2024-10-17 20:50:58,454 - DEBUG - https://sun9-56.userapi.com:443 "GET /s/v1/if2/nEA8dEUHQ211z9T6pPxBQmc2hWhPOM6ePUU457VZaOAghbC0JseWHctbU86xQkYaKdX8CFBT-TYtaZfCxO_CkhOb.jpg?quality=96&as=32x40,48x60,72x90,108x135,160x200,240x300,360x450,480x600,540x675,640x800,720x900,816x1020&from=bu HTTP/11" 200 223853
+2024-10-17 20:50:58,490 - INFO - Фотография 353.jpg успешно сохранена!
+2024-10-17 20:50:58,492 - DEBUG - Starting new HTTPS connection (1): sun9-6.userapi.com:443
+2024-10-17 20:50:58,536 - DEBUG - https://sun9-6.userapi.com:443 "GET /s/v1/if2/mNEF9zK_o6VuhvlnWLLDUpzgUNk0fjEuLMumELEPyZMHfAqz3-IXABIvZpOf0fLZXu8iXXuj5UzXThNAxWv8ucyG.jpg?quality=96&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1200x1600&from=bu HTTP/11" 200 391465
+2024-10-17 20:50:58,584 - INFO - Фотография 154.jpg успешно сохранена!
+2024-10-17 20:50:58,585 - DEBUG - Starting new HTTPS connection (1): sun9-78.userapi.com:443
+2024-10-17 20:50:58,633 - DEBUG - https://sun9-78.userapi.com:443 "GET /s/v1/ig2/DjZyVHRj2uWqx1lPYbuQtApavy8ZfHJWP4CWo0JmpIxudXMxNn6ak9o4JeBf-m5CJU7eIqBktPoAiB8WlQdPLWwV.jpg?quality=96&as=32x44,48x66,72x98,108x148,160x219,240x328,360x492,480x656,540x738,640x875,720x984,733x1002&from=bu HTTP/11" 200 231325
+2024-10-17 20:50:58,667 - INFO - Фотография 31.jpg успешно сохранена!
+2024-10-17 20:50:58,669 - DEBUG - Starting new HTTPS connection (1): api.vk.com:443
+2024-10-17 20:50:58,780 - DEBUG - https://api.vk.com:443 "GET /method/photos.get?access_token=vk1.a.Wq5KQMNK61lREPWT36p13J9X0lBcaHJ5sEXXxjNklQqEhduhuv_J0SMHTIc2Y5bgC9f3ZHXKMvPyvKXdziQCM4fkCMLJuqcHqhZHTGMZ9gvpvlInC05sa6EJcTN0ueA5OMoUgm5MzQZ_Y5srdGzN3XRhKDkt49AUGj5rq5KM0uKX12-q_9mg_kYcvUFq-8dH&v=5.131&owner_id=260829155&album_id=profile&extended=1&count=5 HTTP/11" 200 1763
+2024-10-17 20:50:58,783 - DEBUG - Starting new HTTPS connection (1): cloud-api.yandex.net:443
+2024-10-17 20:50:59,206 - DEBUG - https://cloud-api.yandex.net:443 "PUT /v1/disk/resources?path=Photos HTTP/11" 201 112
+2024-10-17 20:50:59,221 - DEBUG - Starting new HTTPS connection (1): cloud-api.yandex.net:443
+2024-10-17 20:50:59,629 - DEBUG - https://cloud-api.yandex.net:443 "GET /v1/disk/resources/upload?path=Photos%2F154.jpg HTTP/11" 200 None
+2024-10-17 20:50:59,636 - DEBUG - Starting new HTTPS connection (1): uploader56j.disk.yandex.net:443
+2024-10-17 20:51:00,785 - DEBUG - https://uploader56j.disk.yandex.net:443 "PUT /upload-target/20241017T205059.707.utd.bo3ddg18osgsvkq90o5z19xfo-k56j.18411988 HTTP/11" 201 None
+2024-10-17 20:51:00,786 - DEBUG - Starting new HTTPS connection (1): cloud-api.yandex.net:443
+2024-10-17 20:51:01,321 - DEBUG - https://cloud-api.yandex.net:443 "GET /v1/disk/resources/upload?path=Photos%2F252.jpg HTTP/11" 200 None
+2024-10-17 20:51:01,329 - DEBUG - Starting new HTTPS connection (1): uploader66j.disk.yandex.net:443
+2024-10-17 20:51:02,177 - DEBUG - https://uploader66j.disk.yandex.net:443 "PUT /upload-target/20241017T205101.408.utd.6w3togrqggyzf49u6yp3zcezn-k66j.18848710 HTTP/11" 201 None
+2024-10-17 20:51:02,178 - DEBUG - Starting new HTTPS connection (1): cloud-api.yandex.net:443
+2024-10-17 20:51:02,628 - DEBUG - https://cloud-api.yandex.net:443 "GET /v1/disk/resources/upload?path=Photos%2F31.jpg HTTP/11" 200 None
+2024-10-17 20:51:02,634 - DEBUG - Starting new HTTPS connection (1): uploader75j.disk.yandex.net:443
+2024-10-17 20:51:03,217 - DEBUG - https://uploader75j.disk.yandex.net:443 "PUT /upload-target/20241017T205102.709.utd.18j1uthsce2qhfse5fctgrix0-k75j.2045384 HTTP/11" 201 None
+2024-10-17 20:51:03,218 - DEBUG - Starting new HTTPS connection (1): cloud-api.yandex.net:443
+2024-10-17 20:51:03,597 - DEBUG - https://cloud-api.yandex.net:443 "GET /v1/disk/resources/upload?path=Photos%2F353.jpg HTTP/11" 200 None
+2024-10-17 20:51:03,604 - DEBUG - Starting new HTTPS connection (1): uploader42o.disk.yandex.net:443
+2024-10-17 20:51:05,664 - DEBUG - https://uploader42o.disk.yandex.net:443 "PUT /upload-target/20241017T205103.678.utd.3el11vzh86gfgtwfri9dms1hq-k42o.4016939 HTTP/11" 201 None
+2024-10-17 20:51:05,666 - DEBUG - Starting new HTTPS connection (1): cloud-api.yandex.net:443
+2024-10-17 20:51:06,379 - DEBUG - https://cloud-api.yandex.net:443 "GET /v1/disk/resources/upload?path=Photos%2F357.jpg HTTP/11" 200 None
+2024-10-17 20:51:06,385 - DEBUG - Starting new HTTPS connection (1): uploader2o.disk.yandex.net:443
+2024-10-17 20:51:06,831 - DEBUG - https://uploader2o.disk.yandex.net:443 "PUT /upload-target/20241017T205106.218.utd.f01dbc5undqmn9ntlbnmg6qz7-k2o.3755769 HTTP/11" 201 None
+2024-10-17 20:51:06,832 - INFO - Фотографии успешно загружены на Яндекс.Диск!

@@ -106,9 +106,10 @@ def main():
     vk_id = Vk_Api(token_cfg.vktoken)
     vk_id.get_photo()
     vk_id.save_photo()
-    yd_id = Yd_Api(token_cfg.ydtoken)
-    yd_id.create_folder()
-    yd_id.uploading_photos()
+    vk_id.writing_to_json()
+    y_d = Yd_Api(token_cfg.ydtoken)
+    y_d.create_folder()
+    y_d.uploading_photos()
 
 
 
