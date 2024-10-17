@@ -1,0 +1,10 @@
+pip~=22.3.1
+wheel~=0.38.4
+requests~=2.32.3
+colorama~=0.4.6
+setuptools~=65.5.1
+certifi~=2024.8.30
+urllib3~=2.2.3
+idna~=3.10
+betterconf~=4.0.0
+tqdm~=4.66.5
