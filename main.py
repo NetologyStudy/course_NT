@@ -1,10 +1,11 @@
 from pprint import pprint
 import os
 import json
+import time
 from tqdm import tqdm
 import logging
 import requests
-from settings import token_cfg
+from settings import token_cfg, vk_id
 
 
 class Vk_Api:
@@ -15,21 +16,22 @@ class Vk_Api:
         self.vk_version = vk_version
         self.params = {'access_token': self.access_token, 'v': self.vk_version}
 
-    def get_photo(self):
-        params = {'owner_id': token_cfg.vkid,'album_id': 'profile', 'extended': 1, 'count': 5}
+    def get_photo(self, vkid):
+        params = {'owner_id': vkid, 'album_id': 'profile', 'extended': 1, 'count': 5}
         response = requests.get(f'{self.vk_url}photos.get', params={**self.params, **params}).json()
         return response['response']['items']
 
     def save_photo(self):
-        photos = self.get_photo()
-        for photo in photos:
+        photos = self.get_photo(vk_id)
+        for photo in tqdm(photos, desc='Save photos'):
+            time.sleep(0.5)
             file_name = photo['likes']['count']
             photo_url = photo['orig_photo']['url']
             try:
                 photo_response = requests.get(photo_url)
                 with open(f'Image/{file_name}.jpg', 'wb') as f:
                     f.write(photo_response.content)
-                logging.info(f'Фотография {file_name}.jpg успешно сохранена!')
+                    logging.info(f'Фотография {file_name}.jpg успешно сохранена!')
             except requests.exceptions.RequestException as req_e:
                 logging.error(f"Ошибка запроса при загрузке фото: {photo_url}, ошибка: {req_e}")
             except OSError as os_e:
@@ -37,9 +39,12 @@ class Vk_Api:
             except Exception as e:
                 logging.error(f"Произошла непредвиденная ошибка при загрузке фото: {photo_url}, ошибка: {e}")
 
+
+        logging.info(f'Фотографии успешно сохранены!')
+
     def writing_to_json(self):
         with open('info.json', 'w', encoding='utf8') as f:
-            photos = self.get_photo()
+            photos = self.get_photo(vk_id)
             info_photo = []
             for photo in photos:
                 photo_size = photo['sizes']
@@ -76,6 +81,7 @@ class Yd_Api:
                 url_upload = response['href']
                 with open(file_path, 'rb') as file:
                     requests.put(url_upload, files={'file': file})
+                    logging.info(f'Фотография {filename} успешно загружена на Яндекс.Диск!')
         except requests.exceptions.RequestException as req_e:
             logging.error(f"Ошибка запроса: {req_e}")
         except FileNotFoundError as fnf_e:
@@ -95,17 +101,18 @@ class Yd_Api:
 
 def main():
     logging.basicConfig(
-        format='%(asctime)s - %(levelname)s - %(message)s',
+        level=logging.INFO,
+        format=' %(asctime)s - %(levelname)s - %(message)s',
         handlers=[
             logging.FileHandler("app.log", encoding='utf-8'),
             logging.StreamHandler()
         ]
     )
 
-    vk_id = Vk_Api(token_cfg.vktoken)
-    vk_id.get_photo()
-    vk_id.save_photo()
-    vk_id.writing_to_json()
+    v_k = Vk_Api(token_cfg.vktoken)
+    v_k.get_photo(vk_id)
+    v_k.save_photo()
+    v_k.writing_to_json()
     y_d = Yd_Api(token_cfg.ydtoken)
     y_d.create_folder()
     y_d.uploading_photos()
