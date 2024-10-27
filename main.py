@@ -5,7 +5,7 @@ import time
 from tqdm import tqdm
 import logging
 import requests
-from settings import token_cfg, vk_id
+from settings import token_cfg, vk_id, yd_token
 
 
 class Vk_Api:
@@ -113,7 +113,7 @@ def main():
     v_k.get_photo(vk_id)
     v_k.save_photo()
     v_k.writing_to_json()
-    y_d = Yd_Api(token_cfg.ydtoken)
+    y_d = Yd_Api(yd_token)
     y_d.create_folder()
     y_d.uploading_photos()
 
