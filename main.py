@@ -1,14 +1,13 @@
-from pprint import pprint
 import os
 import json
 import time
 from tqdm import tqdm
 import logging
 import requests
-from settings import token_cfg, vk_id, yd_token
+from settings import token_cfg
 
 
-class Vk_Api:
+class VkApi:
     vk_url = 'https://api.vk.com/method/'
 
     def __init__(self, access_token, vk_version='5.131'):
@@ -16,13 +15,13 @@ class Vk_Api:
         self.vk_version = vk_version
         self.params = {'access_token': self.access_token, 'v': self.vk_version}
 
-    def get_photo(self, vkid):
-        params = {'owner_id': vkid, 'album_id': 'profile', 'extended': 1, 'count': 5}
+    def get_photo(self, vk_id=input('Введите свой ВК ID: ')):
+        params = {'owner_id': vk_id, 'album_id': 'profile', 'extended': 1, 'count': 5}
         response = requests.get(f'{self.vk_url}photos.get', params={**self.params, **params}).json()
         return response['response']['items']
 
-    def save_photo(self):
-        photos = self.get_photo(vk_id)
+
+    def save_photo(self, photos):
         for photo in tqdm(photos, desc='Save photos'):
             time.sleep(0.5)
             file_name = photo['likes']['count']
@@ -42,9 +41,9 @@ class Vk_Api:
 
         logging.info(f'Фотографии успешно сохранены!')
 
-    def writing_to_json(self):
+
+    def writing_to_json(self, photos):
         with open('info.json', 'w', encoding='utf8') as f:
-            photos = self.get_photo(vk_id)
             info_photo = []
             for photo in photos:
                 photo_size = photo['sizes']
@@ -54,15 +53,15 @@ class Vk_Api:
 
 
 
-class Yd_Api:
-
+class YdApi:
     def __init__(self, access_token):
         self.headers = {'Authorization': f'OAuth {access_token}'}
-        self.params = {'path': 'Photos'}
 
-    def create_folder(self):
+
+    def create_folder(self, name_folder):
         yd_url = 'https://cloud-api.yandex.net/v1/disk/resources'
-        response = requests.put(yd_url, headers=self.headers, params=self.params)
+        response = requests.put(yd_url, headers=self.headers, params={'path': name_folder})
+
 
     def uploading_photos(self):
 
@@ -109,12 +108,14 @@ def main():
         ]
     )
 
-    v_k = Vk_Api(token_cfg.vktoken)
-    v_k.get_photo(vk_id)
-    v_k.save_photo()
-    v_k.writing_to_json()
-    y_d = Yd_Api(yd_token)
-    y_d.create_folder()
+    v_k = VkApi(token_cfg.vktoken)
+    photos = v_k.get_photo()
+    v_k.save_photo(photos)
+    v_k.writing_to_json(photos)
+    time.sleep(0.5)
+    yd_token = input('Введите свой токен Яндекс Диска: ')
+    y_d = YdApi(yd_token)
+    y_d.create_folder('Photos')
     y_d.uploading_photos()
 
 
